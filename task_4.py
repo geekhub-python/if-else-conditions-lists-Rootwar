@@ -5,7 +5,5 @@ list = list.split(' ')
 count = 0
 
 for index in list:
-    if list.count(index) >= 2:
-        index = 1
-        count += index
-print(count / 2)
+    count += list.count(index)
+print('Result:', (count - len(list)) // 2)
